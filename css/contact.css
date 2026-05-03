@@ -1,0 +1,103 @@
+/* ============================================================
+   CONTACT PAGE STYLES
+   ============================================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Info Cards ──────────────────────────────────────────── */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.c-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: var(--transition);
+}
+.c-card:hover {
+  border-color: var(--border-hover);
+}
+.c-icon {
+  width: 48px; height: 48px;
+  background: var(--purple-glow);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.c-info { display: flex; flex-direction: column; gap: 4px; }
+.c-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
+.c-val { font-size: 0.9rem; font-weight: 500; color: var(--text-primary); }
+
+.c-socials { display: flex; gap: 12px; }
+.c-socials a {
+  width: 40px; height: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+.c-socials a:hover {
+  border-color: var(--purple-400);
+  color: var(--purple-400);
+}
+
+.c-protip {
+  background: rgba(168,85,247,0.05);
+  border-left: 3px solid var(--purple-500);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.c-protip strong { color: var(--purple-400); }
+
+/* ── Form ────────────────────────────────────────────────── */
+.contact-form-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+.form-group label { font-size: 0.8rem; font-weight: 600; color: var(--text-primary); }
+.form-group input, .form-group textarea {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: var(--purple-500);
+}
+.form-group textarea { min-height: 140px; resize: vertical; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .contact-form-wrapper { padding: 24px; }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Afshan</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Afshan.</a>
+    <ul class="nav-links">
+      <li><a href="index.html"     class="nav-link">Home</a></li>
+      <li><a href="about.html"     class="nav-link">About</a></li>
+      <li><a href="services.html"  class="nav-link">Services</a></li>
+      <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+      <li><a href="contact.html"   class="nav-link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">✨ Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close" style="background:transparent;border:none;color:white;font-size:1.5rem;position:absolute;top:20px;right:20px;">✕</button>
+  <a href="index.html"     class="nav-link">Home</a>
+  <a href="about.html"     class="nav-link">About</a>
+  <a href="services.html"  class="nav-link">Services</a>
+  <a href="portfolio.html" class="nav-link active">Portfolio</a>
+  <a href="contact.html"   class="nav-link">Contact</a>
+  <a href="contact.html"   class="nav-cta">✨ Hire Me</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-bottom: 40px;">
+  <div class="container">
+    <div class="section-tag-line animate-fade-up">
+      <span class="line"></span><span class="text">MY WORK</span><span class="line"></span>
+    </div>
+    <h1 class="page-hero-title animate-fade-up">
+      Selected <span class="script-text" style="font-size:1.2em">projects</span><br>shipped with love.
+    </h1>
+    <p class="section-subtitle animate-fade-up">
+      A showcase of automation systems, AI agents, and SaaS products I've built for clients across industries.
+    </p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<section class="section" style="padding: 20px 0;">
+  <div class="container">
+    <div class="filter-bar animate-fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+      <button class="filter-btn" data-filter="ai-agents">AI Agents</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+      <button class="filter-btn" data-filter="integrations">Integrations</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS GRID -->
+<section class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <div class="project-card animate-fade-up" data-category="automation" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">📦</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AUTOMATION</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>E-Commerce Automation Hub</h3>
+          <p>Complete n8n automation suite for an e-commerce business — order processing, inventory sync, customer notifications, and analytics reporting.</p>
+          <div class="pc-tags">
+            <span>n8n</span><span>Shopify API</span><span>Slack</span><span>Google Sheets</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card animate-fade-up" data-category="ai-agents" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">🧠</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AI AGENTS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>AI Customer Support Agent</h3>
+          <p>Intelligent AI agent that handles customer inquiries, routes tickets, and provides instant responses using RAG with company knowledge base.</p>
+          <div class="pc-tags">
+            <span>GPT-4</span><span>LangChain</span><span>Pinecone</span><span>FastAPI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card animate-fade-up" data-category="saas" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">📊</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">SAAS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>SaaS Analytics Dashboard</h3>
+          <p>Full-stack SaaS application for business analytics with real-time data visualization, user management, and Stripe billing integration.</p>
+          <div class="pc-tags">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Stripe</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card animate-fade-up" data-category="automation" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">🎯</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AUTOMATION</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>Lead Gen Automation Pipeline</h3>
+          <p>Make.com automation that captures leads from multiple sources, enriches data, scores prospects, and feeds them into CRM with automated follow-ups.</p>
+          <div class="pc-tags">
+            <span>Make.com</span><span>HubSpot</span><span>Clearbit</span><span>Gmail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="project-card animate-fade-up" data-category="ai-agents" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">🧩</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AI AGENTS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>Multi-Agent Research System</h3>
+          <p>Orchestrated multi-agent system that researches topics, synthesizes information, and generates comprehensive reports autonomously.</p>
+          <div class="pc-tags">
+            <span>Claude</span><span>OpenAI</span><span>Tavily</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="project-card animate-fade-up" data-category="saas" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">✨</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">SAAS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>Vibe-Coded Project Manager</h3>
+          <p>Project management tool built using vibe coding methodology — from concept to deployment in 48 hours using Replit and AI-assisted development.</p>
+          <div class="pc-tags">
+            <span>Replit</span><span>React</span><span>Supabase</span><span>Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="project-card animate-fade-up" data-category="integrations" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">🔌</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">INTEGRATIONS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>CRM-to-ERP Integration Bridge</h3>
+          <p>Bi-directional data synchronization between Salesforce CRM and SAP ERP, handling real-time updates, conflict resolution, and data mapping.</p>
+          <div class="pc-tags">
+            <span>n8n</span><span>Salesforce</span><span>SAP</span><span>REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="project-card animate-fade-up" data-category="automation" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">📝</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AUTOMATION</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>Content Automation Engine</h3>
+          <p>AI-powered content generation and distribution pipeline — creates blog posts, social media content, and newsletters on autopilot.</p>
+          <div class="pc-tags">
+            <span>Make.com</span><span>GPT-4</span><span>WordPress</span><span>Buffer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="project-card animate-fade-up" data-category="ai-agents" style="display:flex">
+        <div class="pc-top">
+          <div class="pc-hero-icon">🧾</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta">
+            <span class="pc-cat">AI AGENTS</span>
+            <a href="#" class="pc-link">↗</a>
+          </div>
+          <h3>AI Invoice Processor</h3>
+          <p>Intelligent document processing agent that extracts data from invoices, validates entries, and syncs with accounting software automatically.</p>
+          <div class="pc-tags">
+            <span>GPT-4 Vision</span><span>n8n</span><span>QuickBooks</span><span>OCR</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="text-align:center; padding-bottom:120px;">
+  <div class="container animate-fade-up">
+    <h2 class="section-title">Have a project in <span class="script-text">mind?</span></h2>
+    <p class="section-subtitle" style="margin-bottom:32px;">I'm always excited to work on new automation challenges and AI projects. Let's bring your idea to life.</p>
+    <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Afshan.</a>
+        <p>AI Automation Expert specializing in n8n, Make.com, Agentic AI, and SaaS development. Turning ideas into intelligent, automated solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="footer-socials">
+          <a href="#">gh</a>
+          <a href="#">in</a>
+          <a href="#">tw</a>
+          <a href="#">em</a>
+        </div>
+        <p style="margin-top:16px; font-size:0.85rem; color:var(--text-secondary);">afshanmursaleen1@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Afshan Mursaleen. All rights reserved.</p>
+      <div class="scroll-top" onclick="window.scrollTo(0,0)">↑</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
