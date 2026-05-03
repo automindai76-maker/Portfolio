@@ -186,7 +186,10 @@
         body: JSON.stringify(payload)
       });
 
-      if (!response.ok) throw new Error('Failed to send message.');
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || errorData.hint || 'Failed to send message. Check console for details.');
+      }
 
       status.className = 'form-status success';
       status.style.color = '#10b981'; // Green for success
