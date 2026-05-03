@@ -160,8 +160,8 @@
     //    );
     // 3. Replace the URL and KEY below with your project API details
     // -------------------------------------------------------------
-    const SUPABASE_URL = 'YOUR_SUPABASE_URL'; // e.g., https://xyz.supabase.co
-    const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+    const SUPABASE_URL = 'mzlhrsdogrzsfdgurpvk'; 
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16bGhyc2RvZ3J6c2ZkZ3VycHZrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4MjY0OTQsImV4cCI6MjA5MzQwMjQ5NH0.RDxNVKlS7Kf23mT-Vzz8peEloUFKvKpQwXfeHo5iQmM';
 
     const payload = {
       name: document.getElementById('name').value,
