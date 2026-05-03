@@ -160,7 +160,7 @@
     //    );
     // 3. Replace the URL and KEY below with your project API details
     // -------------------------------------------------------------
-    const SUPABASE_URL = 'mzlhrsdogrzsfdgurpvk'; 
+    const SUPABASE_URL = 'https://mzlhrsdogrzsfdgurpvk.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16bGhyc2RvZ3J6c2ZkZ3VycHZrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4MjY0OTQsImV4cCI6MjA5MzQwMjQ5NH0.RDxNVKlS7Kf23mT-Vzz8peEloUFKvKpQwXfeHo5iQmM';
 
     const payload = {
